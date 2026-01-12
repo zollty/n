@@ -3,21 +3,27 @@
   {% include head.html %}
 
   <body>
-
     {% include zs-nav.html %}
 
     <div class="container">
-
-      <div class="row">
-        {{ content }}
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
+      <div class="row">{{ content }}</div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
 
     {% include footer.html %}
 
-	<script type="text/javascript" src="http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://cdn.staticfile.org/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}{{ site.assets_path }}/js/app.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://s.h230.cn/lib/jquery/2.1.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://s.h230.cn/lib/twitter-bootstrap/3.3.1/js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ site.baseurl }}{{ site.assets_path }}/js/app.min.js"
+    ></script>
   </body>
 </html>

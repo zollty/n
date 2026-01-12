@@ -2,7 +2,7 @@
 permalink: /tweet/:year/:month/:day/:title.html
 paginate: 10
 paginate_path: '/index:num'
-timezone:      Asia/Shanghai
+timezone: Asia/Shanghai
 future: true
 
 # Conversion # Build settings
@@ -10,50 +10,49 @@ lsi: true # 在github中是无效的
 highlighter: rouge
 markdown: kramdown
 redcarpet:
-    extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough"]
+  extensions: ['fenced_code_blocks', 'tables', 'highlight', 'strikethrough']
 
 # Serving
 baseurl: /n # does not include hostname
 # cdn base url
-cdn_base_url:  http://s.h230.cn
+cdn_base_url: https://s.h230.cn
 
-favicon: http://s.h230.cn/my/img/favicon.ico
+favicon: https://s.h230.cn/my/img/favicon.ico
 
 # 站点信息 # Site settings
-title: "Zollty随笔"
+title: 'Zollty随笔'
 description: "Zollty's Tweets"
-url: http://blog.zollty.com/n
+url: https://blog.zollty.com/n
 
 # 相对于baseurl
 atom_path: /atom.xml
 rss_path: /rss.xml
 assets_path: /assets
 sass:
-    sass_dir: assets/_sass
-    style: :compressed
+  sass_dir: assets/_sass
+  style: :compressed
 
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts" # The different types that are available to you are pages, posts, drafts or any collection in your site.
+  - scope:
+      path: ''
+      type: 'posts' # The different types that are available to you are pages, posts, drafts or any collection in your site.
     values:
-      layout: "post"
+      layout: 'post'
 
 author:
-    name: zollty
-    email: zollty@163.com
-    twitter:
-    facebook:
-    weibo: zollty
+  name: zollty
+  email: zollty@163.com
+  twitter:
+  facebook:
+  weibo: zollty
 
 # comment
 comments:
-    enable: true
+  enable: true
 # 网站统计
 analytics:
-    baidu:
-        siteid: b50955356fe8e228a2474f35de44053f        # 百度统计 js 代码后的字符串
+  baidu:
+    siteid: b50955356fe8e228a2474f35de44053f # 百度统计 js 代码后的字符串
 
 plugins:
   - jekyll-paginate
